@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#ff1b5b</color>
+    <color name="color_rcv_course">#64758c</color>
+    <color name="color_bg">#eff7ff</color>
+    <color name="color_text">#8E8E8E</color>
+    <color name="color_editText">#EDEDED</color>
+</resources>

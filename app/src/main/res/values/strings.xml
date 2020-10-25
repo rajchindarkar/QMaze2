@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UReg</string>
+    <string name="string_course">Course</string>
+    <string name="string_seats">"Seats : "</string>
+    <string name="string_credits">"Credits : "</string>
+    <string name="string_students">Students</string>
+    <string name="string_no_studs">No students available</string>
+    <string name="string_add_students">ADD</string>
+    <string name="strig_fname">First Name</string>
+    <string name="strig_edu">Education Level</string>
+    <string name="strig_lname">Last Name</string>
+    <string name="strig_email">Email</string>
+    <string name="errfname">Please enter valid firstname</string>
+    <string name="errlname">Please enter valid lastname</string>
+    <string name="errmail">Please enter valid email</string>
+    <string name="erredu">Please enter valid education level</string>
+</resources>

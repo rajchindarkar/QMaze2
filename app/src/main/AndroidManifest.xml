@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dc.msu.ureg">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.dc.msu.ureg.WaitingList"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false"
+            ></activity>
+        <activity android:name="com.dc.msu.ureg.EditStudent"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false"/>
+        <activity android:name="com.dc.msu.ureg.AddStudents"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false"/>
+        <activity android:name="com.dc.msu.ureg.ViewStudents"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false"/>
+        <activity android:name="com.dc.msu.ureg.MainActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

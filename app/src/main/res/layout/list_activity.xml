@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+
+    tools:context=".ViewStudents">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:contentInsetStart="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/txtActionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/calibaraibold"
+            android:text="@string/string_students"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_17ssp"
+            tools:ignore="DuplicateIds" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcStudents"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layoutActionBar"
+        android:layout_height="match_parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/_20sdp"
+    android:id="@+id/btnAdd"
+    android:src="@drawable/ic_add"
+    android:text="@string/string_add_students"
+    android:textSize="@dimen/_16ssp"
+    android:fontFamily="@font/calibaraibold"
+    android:textColor="@android:color/white"
+    android:background="@drawable/rounded_corners"
+    android:layout_alignParentRight="true"
+/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_17ssp"
+        android:fontFamily="@font/calibaraibold"
+        android:text="@string/string_no_studs"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:id="@+id/txtEmpty"/>
+    <com.levitnudi.legacytableview.LegacyTableView
+        android:id="@+id/legacy_table_view"
+        android:layout_below="@id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:background="@color/color_bg"
+        android:layout_height="match_parent"/>
+</RelativeLayout>
